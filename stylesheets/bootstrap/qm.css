@@ -1,0 +1,79 @@
+body {
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.0rem;
+}
+
+.create-button {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, minmax(20px, auto));
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.content {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 0.3fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: repeat(1, minmax(20px, auto));
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.content-client {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 0.3fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: repeat(1, minmax(20px, auto));
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.content-create {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 0.6fr 0.5fr 1fr;
+  grid-template-rows: repeat(4, minmax(50px, auto));
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.content-delete {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 0.6fr 0.5fr 0.7fr;
+  grid-template-rows: repeat(2, minmax(50px, auto));
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.content-header {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 0.3fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: repeat(1, minmax(20px, auto));
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.question {
+  font-size: 1.5rem;
+}
+
+.answer-correct {
+  color: Green;
+  font-size: 1.5rem;
+}
+
+.answer-incorrect {
+  color: Red;
+  font-size: 1.5rem
+}
