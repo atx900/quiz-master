@@ -5,7 +5,7 @@ var quizAnswer1 = []
 var quizAnswer2 = []
 
 var quizTracker = 0                                                           // keeps track of the current quiz handled by the user
-var quizNumber = 1
+var quizNumber = 1                                                            // displays the current quiz number on client page
 var userInput = ''                                                            // stores the quiz answer provided by the user
 
 quizID = document.querySelectorAll('span#quiz_id')                            // retrieve quiz data from hidden DOM elements
@@ -134,4 +134,6 @@ function feedbackWrong () {                                                   //
   spanWrong.setAttribute('id', 'feedBack')
   spanWrong.innerHTML = 'Your answer ' + userInput + ' is incorrect.'
   parentWrong.appendChild(spanWrong)
+
+  document.getElementById('userAnswer').value = ''                            // clears up recent user input
 }
